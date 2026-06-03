@@ -292,7 +292,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-semibold py-4 px-6 rounded-lg transition-colors transform hover:scale-[1.02] active:scale-[0.98]"
+                className="brand-btn brand-btn-primary w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-semibold py-4 px-6 rounded-lg active:scale-[0.99]"
               >
                 {isSubmitting ? (
                   <span className="flex items-center justify-center">

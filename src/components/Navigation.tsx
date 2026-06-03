@@ -63,7 +63,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Link
               href="#contact"
-              className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+              className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full text-sm font-medium"
             >
               Discuss Your Project
             </Link>
@@ -118,7 +118,7 @@ export default function Navigation() {
               <div className="pt-2">
                 <Link
                   href="#contact"
-                  className="bg-primary-600 hover:bg-primary-700 text-white block px-4 py-3 text-base font-medium rounded-lg text-center transition-colors"
+                  className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white block px-4 py-3 text-base font-medium rounded-lg text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Discuss Your Project

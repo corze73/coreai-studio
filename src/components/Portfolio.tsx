@@ -139,7 +139,7 @@ export default function Portfolio() {
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="w-full mt-auto bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200 group-hover:bg-primary-600 group-hover:text-white"
+                  className="brand-btn brand-btn-secondary w-full mt-auto bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg group-hover:bg-primary-600 group-hover:text-white"
                 >
                   View Project
                 </button>
@@ -149,14 +149,14 @@ export default function Portfolio() {
         </div>
 
         <div className="text-center">
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Need a similar project for your business?
             </h3>
             <p className="text-lg text-gray-600 mb-6">
               If you need a website, app, dashboard or automation build, I can help scope the right approach.
             </p>
-            <a href="#contact" className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+            <a href="#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold inline-block">
               Discuss Your Project
             </a>
           </div>
@@ -211,7 +211,7 @@ export default function Portfolio() {
               <div className="text-center">
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                  className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold"
                 >
                   Close
                 </button>

@@ -256,7 +256,7 @@ export default function Services() {
 
                 <button 
                   onClick={() => setExpandedService(expandedService === index ? null : index)}
-                  className="w-full mt-6 bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200 ease-out"
+                  className="brand-btn brand-btn-secondary w-full mt-6 bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg"
                 >
                   {expandedService === index ? 'Show Less' : 'Learn More'}
                 </button>
@@ -328,13 +328,13 @@ export default function Services() {
                       <div className="flex flex-col sm:flex-row gap-3">
                         <a
                           href="#contact"
-                          className="flex-1 bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors text-center"
+                          className="brand-btn brand-btn-primary flex-1 bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg font-semibold text-center"
                         >
                           Discuss Your Project
                         </a>
                         <button 
                           onClick={() => setExpandedService(expandedService === index ? null : index)}
-                          className="flex-1 border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 py-3 px-6 rounded-lg font-semibold transition-colors"
+                          className="brand-btn brand-btn-secondary flex-1 border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 py-3 px-6 rounded-lg font-semibold"
                         >
                           Close Details
                         </button>
@@ -348,7 +348,7 @@ export default function Services() {
         </div>
 
         <div className="text-center mt-10 sm:mt-16">
-          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-9 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Need a website, app or automation project scoped properly?
             </h3>
@@ -356,10 +356,10 @@ export default function Services() {
               Share what you need and I&apos;ll suggest the most practical approach for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <a href="#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold">
                 Discuss Your Project
               </a>
-              <a href="#portfolio" className="border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition-colors">
+              <a href="#portfolio" className="brand-btn brand-btn-secondary border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold">
                 View Work
               </a>
             </div>

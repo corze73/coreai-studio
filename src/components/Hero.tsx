@@ -43,13 +43,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center px-4 sm:px-0 mt-2">
             <Link
               href="#contact"
-              className="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl text-center"
+              className="brand-btn brand-btn-primary w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-base sm:text-lg font-semibold text-center"
             >
               Discuss Your Project
             </Link>
             <Link
               href="#portfolio"
-              className="w-full sm:w-auto border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-200 text-center"
+              className="brand-btn brand-btn-secondary w-full sm:w-auto border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-4 rounded-full text-base sm:text-lg font-semibold text-center"
             >
               View Work
             </Link>
