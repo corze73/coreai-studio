@@ -12,55 +12,14 @@ export default function About() {
               <span className="text-primary-600"> for Real Businesses</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              CoreAI Studio helps businesses build practical websites, web apps, dashboards, booking systems and automation workflows that are designed for real day-to-day operations.
+              CoreAI Studio focuses on building practical digital solutions for businesses, including websites, mobile-friendly applications, dashboards and automation systems.
+            </p>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Projects are approached with a problem-solving mindset shaped by experience in technical support, systems deployment and modern development workflows.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              This is a freelance-led service with experience in technical support, systems deployment, engineering discipline and business problem-solving. Every build is approached as a practical technical solution, not an agency-style template deliverable.
+              The focus is always on usability, reliability and building solutions that help businesses operate more effectively.
             </p>
-
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Real technical problem-solving</h3>
-                  <p className="text-gray-600">Practical delivery for business systems, websites and automation workflows</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Clear communication</h3>
-                  <p className="text-gray-600">Direct collaboration with a single developer who understands the full project</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Modern tools, grounded delivery</h3>
-                  <p className="text-gray-600">AI-assisted workflows where useful, with human judgment and accountability</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Visual Element */}

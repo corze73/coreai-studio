@@ -82,7 +82,7 @@ export default function Contact() {
               <span className="text-primary-600"> Project?</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Tell me what you need and I&apos;ll come back with the most practical next step.
+              Tell me what you need and I&apos;ll come back with the most practical next step for your project.
             </p>
 
             {/* Contact Methods */}
@@ -240,7 +240,7 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Package Interest
+                    Project Type
                   </label>
                   <select
                     name="service"
@@ -248,11 +248,11 @@ export default function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                   >
-                      <option value="">Select a project type</option>
-                      <option value="website">Website Development</option>
-                      <option value="app">Web / Mobile App Development</option>
-                      <option value="automation">Business Automation</option>
-                      <option value="support">Technical Support & Improvements</option>
+                      <option value="">Select project type</option>
+                      <option value="small-site">Small Website / Improvements</option>
+                      <option value="web-app">Web App or Dashboard</option>
+                      <option value="automation">Automation Project</option>
+                      <option value="ongoing-support">Ongoing Support</option>
                   </select>
                 </div>
                 <div>

@@ -13,7 +13,7 @@ export default function Services() {
         </svg>
       ),
       title: "Website Development",
-      description: "Business websites that look credible, work on mobile and support your day-to-day operations.",
+      description: "Responsive business websites, landing pages and frontend experiences designed to look professional and perform well across all devices.",
       features: [
         "Business websites",
         "Landing pages",
@@ -54,7 +54,7 @@ export default function Services() {
         </svg>
       ),
       title: "Web & Mobile App Development",
-      description: "Interactive web applications, dashboards and booking systems built for users who expect speed and reliability.",
+      description: "Modern web applications, dashboards, booking systems and mobile-friendly platforms built using scalable technologies.",
       features: [
         "React web apps",
         "Mobile-friendly PWAs",
@@ -95,7 +95,7 @@ export default function Services() {
         </svg>
       ),
       title: "Business Automation",
-      description: "Workflow systems that remove repetitive admin and help teams spend more time on meaningful work.",
+      description: "Workflow systems, admin tools and automation solutions designed to improve efficiency and simplify business processes.",
       features: [
         "Workflow automation",
         "Form-to-email systems",
@@ -128,6 +128,47 @@ export default function Services() {
         },
         deliveryTime: "Depends on the number of systems and approval steps involved"
       }
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123A6.948 6.948 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zm-9-1a1 1 0 012 0v3a1 1 0 11-2 0V9zm1-3a1.25 1.25 0 100 2.5A1.25 1.25 0 0010 6z" clipRule="evenodd" />
+        </svg>
+      ),
+      title: "Technical Support & Improvements",
+      description: "Ongoing support, UI improvements, troubleshooting and technical enhancements for existing systems and websites.",
+      features: [
+        "Issue troubleshooting",
+        "UI and UX refinements",
+        "Performance improvements",
+        "Deployment assistance",
+        "Technical updates",
+        "Ongoing support"
+      ],
+      gradient: "from-gray-500 to-gray-700",
+      detailedInfo: {
+        overview: "This service is for businesses that already have a website or app and need dependable technical help to keep things running smoothly and improving over time.",
+        process: [
+          "Review current setup and identify issues",
+          "Prioritise fixes and practical improvements",
+          "Implement changes in controlled updates",
+          "Test across devices and core user flows",
+          "Continue support where needed"
+        ],
+        benefits: [
+          "Faster issue resolution",
+          "Clearer user experience",
+          "Improved reliability",
+          "Reduced technical friction",
+          "Ongoing improvement plan"
+        ],
+        pricing: {
+          starter: "Support retainers - quoted after consultation",
+          professional: "Improvement sprints - quoted after consultation",
+          enterprise: "Long-term technical support - quoted after consultation"
+        },
+        deliveryTime: "Based on issue complexity and update scope"
+      }
     }
   ];
 
@@ -144,11 +185,11 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-8 items-stretch">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full"
             >
               {index === 0 && (
                 <div className="relative h-48 overflow-hidden">
@@ -180,6 +221,16 @@ export default function Services() {
                 </div>
               )}
 
+              {index === 3 && (
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Technical support and product improvements"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+
               <div className={`bg-gradient-to-r ${service.gradient} p-6 text-white`}>
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
                   {service.icon}
@@ -188,7 +239,7 @@ export default function Services() {
                 <p className="text-white/90">{service.description}</p>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <ul className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-gray-700">

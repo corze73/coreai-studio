@@ -24,7 +24,7 @@ export default function Portfolio() {
       title: 'FACT – Find A Coach Today',
       category: 'Web App',
       description: 'Coaching marketplace platform with user roles, bookings, dashboards and a mobile-first layout.',
-      tags: ['Marketplace', 'Bookings', 'Project in development'],
+      tags: ['Marketplace', 'Bookings', 'Project in Development'],
       metrics: ['Marketplace platform', 'User roles and dashboards', 'Mobile-first layout'],
       gradient: 'from-primary-600 to-primary-700',
       challenge: 'The project needed a clear marketplace structure that could support multiple user types, bookings and a simple mobile experience.',
@@ -36,7 +36,7 @@ export default function Portfolio() {
       title: 'AFMG',
       category: 'Website',
       description: 'Football management website created to present the brand clearly and support ongoing updates.',
-      tags: ['Website', 'Responsive', 'Project in development'],
+      tags: ['Website', 'Responsive', 'Concept & Development'],
       metrics: ['Football management website', 'Responsive layout', 'Content-ready structure'],
       gradient: 'from-gray-600 to-gray-700',
       challenge: 'The business needed a clear website presence that could present information professionally and work well on mobile.',
@@ -48,7 +48,7 @@ export default function Portfolio() {
       title: 'Project Analytics Dashboard',
       category: 'Dashboard',
       description: 'Business dashboard and data display project focused on presenting useful information clearly.',
-      tags: ['Dashboard', 'Data display', 'Project in development'],
+      tags: ['Dashboard', 'Data display', 'Project in Development'],
       metrics: ['Dashboard UI', 'Data display views', 'Mobile-friendly layout'],
       gradient: 'from-gray-700 to-gray-800',
       challenge: 'The dashboard needed to present data clearly for day-to-day business use without clutter or unnecessary complexity.',
@@ -68,10 +68,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-14 sm:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Selected
-            <span className="text-primary-600"> Projects</span>
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Selected Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Real project examples that show the kind of practical work CoreAI Studio delivers.
           </p>
@@ -103,9 +100,9 @@ export default function Portfolio() {
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group flex flex-col h-full"
             >
-              <div className={`bg-gradient-to-r ${project.gradient} p-6 text-white relative overflow-hidden`}>
+              <div className={`bg-gradient-to-r ${project.gradient} p-6 text-white relative overflow-hidden min-h-[190px]`}>
                 <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
                 <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/10 rounded-full translate-y-8 -translate-x-8"></div>
 
@@ -116,7 +113,7 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-gray-900 mb-3">Key Details:</h4>
                   <div className="space-y-2">
@@ -142,7 +139,7 @@ export default function Portfolio() {
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="w-full bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200 group-hover:bg-primary-600 group-hover:text-white"
+                  className="w-full mt-auto bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200 group-hover:bg-primary-600 group-hover:text-white"
                 >
                   View Project
                 </button>

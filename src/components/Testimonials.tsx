@@ -96,11 +96,15 @@ export default function Capabilities() {
         <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-6 sm:p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Modern Tools, Practical Delivery</h3>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            CoreAI Studio uses modern frontend frameworks, responsive design principles, cloud deployment workflows and database-backed systems to build practical digital solutions for businesses.
+            CoreAI Studio uses modern frontend frameworks, responsive design principles, cloud deployment workflows and database-backed systems to build practical digital solutions.
           </p>
-          <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
-            React, JavaScript, HTML/CSS, PostgreSQL, GitHub, Netlify and AI-assisted development tools.
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            {['React', 'JavaScript', 'HTML/CSS', 'PostgreSQL', 'GitHub', 'Netlify', 'AI-assisted development tools'].map((tech) => (
+              <span key={tech} className="bg-white/15 border border-white/25 px-3 py-1.5 rounded-full text-sm text-white/95">
+                {tech}
+              </span>
+            ))}
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white/10 rounded-xl p-6">

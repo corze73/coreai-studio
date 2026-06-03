@@ -17,8 +17,8 @@ export default function Footer() {
       { name: 'Project Analytics Dashboard', href: '#portfolio' }
     ],
     contact: [
-      { name: 'Freelancer Profile', href: '' },
-      { name: 'LinkedIn', href: '' }
+      { name: 'Freelancer Profile' },
+      { name: 'LinkedIn' }
     ]
   }
 
@@ -81,17 +81,9 @@ export default function Footer() {
                     hello@coreai-studio.com
                   </a>
                 </li>
-                <li className="text-gray-400">UK-based freelancer</li>
+                <li className="text-gray-400">UK-based freelance developer</li>
                 {footerLinks.contact.map((link, index) => (
-                  <li key={index} className="text-gray-400">
-                    {link.href ? (
-                      <a href={link.href} className="hover:text-white transition-colors">
-                        {link.name}
-                      </a>
-                    ) : (
-                      <span>{link.name}</span>
-                    )}
-                  </li>
+                  <li key={index} className="text-gray-400">{link.name}</li>
                 ))}
               </ul>
             </div>

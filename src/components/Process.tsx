@@ -3,7 +3,7 @@ export default function Process() {
     {
       number: "01",
       title: "Discovery",
-      description: "We discuss your goals, current setup and the outcome you want to achieve.",
+      description: "Understanding goals, users and business requirements.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
@@ -14,7 +14,7 @@ export default function Process() {
     {
       number: "02",
       title: "Planning",
-      description: "I map the structure, features, content and technical approach before any build starts.",
+      description: "Structuring the project, user flow and technical approach.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
@@ -25,7 +25,7 @@ export default function Process() {
     {
       number: "03",
       title: "Build",
-      description: "The website, app or workflow is developed with responsiveness, performance and maintainability in mind.",
+      description: "Developing the website, application or workflow system.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
@@ -36,7 +36,7 @@ export default function Process() {
     {
       number: "04",
       title: "Review",
-      description: "We check usability, content, layout and functionality before anything goes live.",
+      description: "Testing, refining and improving usability across devices.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -47,7 +47,7 @@ export default function Process() {
     {
       number: "05",
       title: "Launch & Support",
-      description: "The project is deployed and supported after launch so you are not left on your own.",
+      description: "Deployment, updates and ongoing improvements where needed.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
@@ -58,7 +58,7 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-20 bg-white">
+    <section id="process" className="py-14 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">

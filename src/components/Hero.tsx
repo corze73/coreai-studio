@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Practical websites, web apps, dashboards and automation systems built by a UK-based freelance developer with a background in technical support, systems deployment and business problem-solving.
+            CoreAI Studio helps businesses build practical websites, mobile-friendly applications, dashboards and workflow systems using modern development tools and AI-assisted delivery.
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 mb-10 sm:mb-12 text-sm text-gray-600">
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center px-4 sm:px-0 mt-2">
             <Link
               href="#contact"
               className="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl text-center"
