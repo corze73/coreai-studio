@@ -58,10 +58,10 @@ export default function Capabilities() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-14 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Delivery Principles</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A freelance setup built for clear communication, practical delivery and digital work that supports how businesses actually operate.
@@ -69,7 +69,7 @@ export default function Capabilities() {
         </div>
 
         {/* Capabilities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6 mb-10 sm:mb-16">
           {capabilities.map((capability, index) => (
             <div 
               key={index}
@@ -93,7 +93,7 @@ export default function Capabilities() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-6 sm:p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Modern Tools, Practical Delivery</h3>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             CoreAI Studio uses modern frontend frameworks, responsive design principles, cloud deployment workflows and database-backed systems to build practical digital solutions for businesses.

@@ -132,9 +132,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-14 sm:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Services Built For
             <span className="text-primary-600"> Practical Business Needs</span>
@@ -144,7 +144,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
@@ -291,8 +291,8 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+        <div className="text-center mt-10 sm:mt-16">
+          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Need a website, app or automation project scoped properly?
             </h3>

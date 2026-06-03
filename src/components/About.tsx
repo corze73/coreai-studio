@@ -2,7 +2,7 @@ import Logo from './Logo'
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-14 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           {/* Content */}
@@ -64,7 +64,7 @@ export default function About() {
           </div>
 
           {/* Visual Element */}
-          <div className="mt-12 lg:mt-0">
+          <div className="mt-10 lg:mt-0">
             <div className="relative">
               <div className="bg-gradient-to-br from-primary-50 to-gray-50 rounded-2xl p-8 transform rotate-3 shadow-lg">
                 <div className="bg-white rounded-xl p-6 transform -rotate-3 shadow-md">

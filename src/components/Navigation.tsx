@@ -104,24 +104,26 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md rounded-lg mt-2">
+            <div className="px-3 pt-3 pb-4 space-y-1 bg-white/95 backdrop-blur-md rounded-xl mt-2 shadow-lg border border-gray-100">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-primary-600 hover:bg-primary-50 block px-4 py-3 text-base font-medium rounded-lg transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="#contact"
-                className="bg-primary-600 hover:bg-primary-700 text-white block px-3 py-2 text-base font-medium rounded-md mt-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Discuss Your Project
-              </Link>
+              <div className="pt-2">
+                <Link
+                  href="#contact"
+                  className="bg-primary-600 hover:bg-primary-700 text-white block px-4 py-3 text-base font-medium rounded-lg text-center transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Discuss Your Project
+                </Link>
+              </div>
             </div>
           </div>
         )}

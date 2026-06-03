@@ -65,7 +65,7 @@ export default function Portfolio() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
+    <section id="portfolio" className="py-14 sm:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -76,7 +76,7 @@ export default function Portfolio() {
             Real project examples that show the kind of practical work CoreAI Studio delivers.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
             {filters.map((filter) => (
               <button
                 key={filter}
@@ -99,7 +99,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 mb-12 sm:mb-16">
           {filteredProjects.map((project, index) => (
             <div
               key={index}

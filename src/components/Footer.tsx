@@ -26,44 +26,27 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16">
-          <div className="grid lg:grid-cols-5 gap-8">
+        <div className="py-12 sm:py-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             {/* Brand Section */}
-            <div className="lg:col-span-2">
-              <div className="mb-6">
+            <div className="sm:col-span-2 lg:col-span-1">
+              <div className="mb-5">
                 <Link href="#home" className="flex items-center space-x-3">
                   <Logo size={36} className="transition-transform duration-200 hover:scale-110" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-bold">CoreAI Studio</span>
-                    <span className="text-sm text-gray-400 -mt-1">Freelance Developer</span>
+                    <span className="text-xl font-bold">CoreAI Studio</span>
+                    <span className="text-sm text-gray-400 -mt-0.5">Freelance Developer</span>
                   </div>
                 </Link>
               </div>
-              <p className="text-gray-400 mb-6 leading-relaxed">
-                CoreAI Studio helps businesses build practical websites, web apps, dashboards and automation systems.
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Web, mobile app and automation development for growing businesses.
               </p>
-              
-              {/* Contact Info */}
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-400">
-                  <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  hello@coreai-studio.com
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                  </svg>
-                  UK-based freelance developer
-                </div>
-              </div>
             </div>
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Services</h3>
+              <h3 className="text-lg font-semibold mb-5">Services</h3>
               <ul className="space-y-3">
                 {footerLinks.services.map((link, index) => (
                   <li key={index}>
@@ -77,7 +60,7 @@ export default function Footer() {
 
             {/* Projects */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Projects</h3>
+              <h3 className="text-lg font-semibold mb-5">Projects</h3>
               <ul className="space-y-3">
                 {footerLinks.projects.map((link, index) => (
                   <li key={index}>
@@ -91,14 +74,14 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Contact</h3>
+              <h3 className="text-lg font-semibold mb-5">Contact</h3>
               <ul className="space-y-3">
                 <li>
                   <a href="mailto:hello@coreai-studio.com" className="text-gray-400 hover:text-white transition-colors">
                     hello@coreai-studio.com
                   </a>
                 </li>
-                <li className="text-gray-400">UK-based freelance developer</li>
+                <li className="text-gray-400">UK-based freelancer</li>
                 {footerLinks.contact.map((link, index) => (
                   <li key={index} className="text-gray-400">
                     {link.href ? (
