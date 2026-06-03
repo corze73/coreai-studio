@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Logo from './Logo'
+import { CheckCircle2, Code2, LayoutDashboard } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -101,26 +102,19 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-gray-400 text-sm">
               <div className="flex items-center gap-2">
                 <span className="brand-icon-shell brand-icon-shell-dark h-7 w-7 rounded-md text-primary-300">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7 12.5l3 3 7-7" />
-                    <circle cx="12" cy="12" r="8" />
-                  </svg>
+                  <CheckCircle2 className="w-4 h-4" strokeWidth={1.8} />
                 </span>
                 Freelance-led
               </div>
               <div className="flex items-center gap-2">
                 <span className="brand-icon-shell brand-icon-shell-dark h-7 w-7 rounded-md text-gray-200">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 8h12M6 12h12M6 16h8" />
-                  </svg>
+                  <LayoutDashboard className="w-4 h-4" strokeWidth={1.8} />
                 </span>
                 Business-focused
               </div>
               <div className="flex items-center gap-2">
                 <span className="brand-icon-shell brand-icon-shell-dark h-7 w-7 rounded-md text-gray-200">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 7l-4 5 4 5M15 7l4 5-4 5" />
-                  </svg>
+                  <Code2 className="w-4 h-4" strokeWidth={1.8} />
                 </span>
                 Practical delivery
               </div>

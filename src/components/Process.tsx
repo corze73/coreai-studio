@@ -1,61 +1,40 @@
+import { CheckCircle2, Code2, Rocket, Search, Route } from 'lucide-react'
+
 export default function Process() {
   const steps = [
     {
       number: "01",
       title: "Discovery",
       description: "Understanding goals, users and business requirements.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="5.5" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M16 16l4 4" />
-        </svg>
-      ),
+      icon: <Search className="w-5 h-5" strokeWidth={1.8} />,
       color: "bg-primary-600"
     },
     {
       number: "02",
       title: "Planning",
       description: "Structuring the project, user flow and technical approach.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 7h14M5 12h10M5 17h7" />
-        </svg>
-      ),
+      icon: <Route className="w-5 h-5" strokeWidth={1.8} />,
       color: "bg-gray-600"
     },
     {
       number: "03",
       title: "Build",
       description: "Developing the website, application or workflow system.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 7l-4 5 4 5M15 7l4 5-4 5" />
-        </svg>
-      ),
+      icon: <Code2 className="w-5 h-5" strokeWidth={1.8} />,
       color: "bg-gray-700"
     },
     {
       number: "04",
       title: "Review",
       description: "Testing, refining and improving usability across devices.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7 12.5l3 3 7-7" />
-          <circle cx="12" cy="12" r="8" />
-        </svg>
-      ),
+      icon: <CheckCircle2 className="w-5 h-5" strokeWidth={1.8} />,
       color: "bg-gray-800"
     },
     {
       number: "05",
       title: "Launch & Support",
       description: "Deployment, updates and ongoing improvements where needed.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 8h12M6 12h12M6 16h8" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 5.5h15v13h-15z" />
-        </svg>
-      ),
+      icon: <Rocket className="w-5 h-5" strokeWidth={1.8} />,
       color: "bg-gray-500"
     }
   ];

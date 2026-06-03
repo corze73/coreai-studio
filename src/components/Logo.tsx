@@ -13,24 +13,24 @@ export default function Logo({ className = "", size = 32 }: LogoProps) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <rect x="1" y="1" width="30" height="30" rx="9" fill="#0F172A" />
-      <rect x="1" y="1" width="30" height="30" rx="9" stroke="#1E40AF" strokeOpacity="0.55" />
+      <rect x="1" y="1" width="30" height="30" rx="8" fill="#0F172A" />
+      <rect x="1" y="1" width="30" height="30" rx="8" stroke="#1D4ED8" strokeOpacity="0.55" />
 
       <path
-        d="M20.4 9.6H14.8C11.93 9.6 9.6 11.93 9.6 14.8V17.2C9.6 20.07 11.93 22.4 14.8 22.4H20.4"
+        d="M20.5 10.2H14.6C12.11 10.2 10.1 12.22 10.1 14.7V17.3C10.1 19.79 12.11 21.8 14.6 21.8H20.5"
         stroke="#93C5FD"
         strokeWidth="2.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M17.8 12.2L22.4 16L17.8 19.8"
+        d="M16.4 12.4L19.6 15.1L16.4 17.8"
         stroke="#3B82F6"
         strokeWidth="2.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="22.4" cy="8.8" r="1.4" fill="#60A5FA" />
+      <path d="M8.6 8.8H11.2" stroke="#60A5FA" strokeWidth="2" strokeLinecap="round" />
     </svg>
   );
 }

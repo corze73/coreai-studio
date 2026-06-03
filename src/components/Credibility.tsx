@@ -1,54 +1,31 @@
+import { Bot, LayoutDashboard, MessageSquare, MonitorSmartphone, Wrench } from 'lucide-react'
+
 export default function Credibility() {
   const cards = [
     {
       title: 'Real Technical Background',
       copy: 'Built on years of experience supporting live systems, troubleshooting technical issues and working directly with businesses in operational environments.',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <rect x="4" y="4" width="16" height="16" rx="2.5" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 9.5H16.5M7.5 14h9" />
-        </svg>
-      )
+      icon: <Wrench className="w-5 h-5" strokeWidth={1.8} />
     },
     {
       title: 'Business-Focused Development',
       copy: 'Projects are designed around usability, workflow efficiency and practical business needs — not just visual appearance.',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h9M4 12h9M4 17h9" />
-          <rect x="14" y="6" width="6" height="12" rx="1.5" />
-        </svg>
-      )
+      icon: <LayoutDashboard className="w-5 h-5" strokeWidth={1.8} />
     },
     {
       title: 'Modern Web & Mobile Solutions',
       copy: 'Responsive websites, dashboards and mobile-friendly applications built using modern frontend technologies and scalable development practices.',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <rect x="3.5" y="5" width="12.5" height="9" rx="1.8" />
-          <rect x="17" y="7" width="3.5" height="10" rx="1" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7 18h5" />
-        </svg>
-      )
+      icon: <MonitorSmartphone className="w-5 h-5" strokeWidth={1.8} />
     },
     {
       title: 'AI-Assisted, Human-Led',
       copy: 'Modern AI tools are used where useful to improve efficiency, while decisions, structure and quality remain human-led.',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <rect x="7" y="7" width="10" height="10" rx="2" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2M12 19v2M3 12h2M19 12h2" />
-        </svg>
-      )
+      icon: <Bot className="w-5 h-5" strokeWidth={1.8} />
     },
     {
       title: 'Clear Communication & Support',
       copy: 'Direct communication, ongoing support and practical guidance throughout the project lifecycle.',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v7a2.5 2.5 0 01-2.5 2.5H10l-3.5 3v-3H7.5A2.5 2.5 0 015 13.5v-7z" />
-        </svg>
-      )
+      icon: <MessageSquare className="w-5 h-5" strokeWidth={1.8} />
     }
   ]
 

@@ -1,61 +1,39 @@
+import { Bot, BriefcaseBusiness, LifeBuoy, MessageSquare, MonitorSmartphone } from 'lucide-react'
+
 export default function Capabilities() {
   const capabilities = [
     {
       title: "Mobile-first development",
       description: "Interfaces are designed to work properly on phones, tablets and desktops.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <rect x="4" y="5" width="12" height="9" rx="1.8" />
-          <rect x="17" y="7" width="3" height="10" rx="0.8" />
-        </svg>
-      ),
+      icon: <MonitorSmartphone className="w-5 h-5" strokeWidth={1.8} />,
       stats: "Mobile",
       color: "bg-primary-600"
     },
     {
       title: "Clear communication",
       description: "Practical updates, straightforward scope and clear handover points.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v7a2.5 2.5 0 01-2.5 2.5H10l-3.5 3v-3H7.5A2.5 2.5 0 015 13.5v-7z" />
-        </svg>
-      ),
+      icon: <MessageSquare className="w-5 h-5" strokeWidth={1.8} />,
       stats: "Simple",
       color: "bg-gray-700"
     },
     {
       title: "Business-focused delivery",
       description: "Builds are shaped around real workflows, outcomes and operational needs.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h9M4 12h9M4 17h9" />
-          <rect x="14" y="6" width="6" height="12" rx="1.5" />
-        </svg>
-      ),
+      icon: <BriefcaseBusiness className="w-5 h-5" strokeWidth={1.8} />,
       stats: "Practical",
       color: "bg-primary-700"
     },
     {
       title: "Support after launch",
       description: "Ongoing help is available for fixes, updates, deployment and improvements.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7 12.5l3 3 7-7" />
-          <circle cx="12" cy="12" r="8" />
-        </svg>
-      ),
+      icon: <LifeBuoy className="w-5 h-5" strokeWidth={1.8} />,
       stats: "Support",
       color: "bg-gray-600"
     },
     {
       title: "AI-assisted where useful",
       description: "AI tools can speed up delivery, but judgment and quality control remain human-led.",
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <rect x="7" y="7" width="10" height="10" rx="2" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2M12 19v2M3 12h2M19 12h2" />
-        </svg>
-      ),
+      icon: <Bot className="w-5 h-5" strokeWidth={1.8} />,
       stats: "Balanced",
       color: "bg-primary-500"
     }
@@ -124,13 +102,13 @@ export default function Capabilities() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
-              className="brand-btn brand-btn-secondary bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
+              className="brand-btn brand-btn-secondary whitespace-nowrap bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
             >
               Discuss Your Project
             </a>
             <a
               href="#services"
-              className="brand-btn border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
+              className="brand-btn whitespace-nowrap border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
             >
               View Services
             </a>

@@ -1,17 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { AppWindow, LayoutPanelTop, Workflow, LifeBuoy } from 'lucide-react';
 
 export default function Services() {
   const [expandedService, setExpandedService] = useState<number | null>(null);
 
   const services = [
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h10" />
-        </svg>
-      ),
+      icon: <LayoutPanelTop className="w-5 h-5" strokeWidth={1.8} />,
       title: "Website Development",
       description: "Responsive business websites, landing pages and frontend experiences designed to look professional and perform well across all devices.",
       features: [
@@ -48,12 +45,7 @@ export default function Services() {
       }
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 6.75A2.75 2.75 0 015.75 4h12.5A2.75 2.75 0 0121 6.75v7.5A2.75 2.75 0 0118.25 17H5.75A2.75 2.75 0 013 14.25v-7.5z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8 10.5h8M8 14h5" />
-        </svg>
-      ),
+      icon: <AppWindow className="w-5 h-5" strokeWidth={1.8} />,
       title: "Web & Mobile App Development",
       description: "Modern web applications, dashboards, booking systems and mobile-friendly platforms built using scalable technologies.",
       features: [
@@ -90,12 +82,7 @@ export default function Services() {
       }
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h7m-7 5h7m-7 5h7" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M14 5h6v14h-6z" />
-        </svg>
-      ),
+      icon: <Workflow className="w-5 h-5" strokeWidth={1.8} />,
       title: "Business Automation",
       description: "Workflow systems, admin tools and automation solutions designed to improve efficiency and simplify business processes.",
       features: [
@@ -132,12 +119,7 @@ export default function Services() {
       }
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.5h9m-9 4h6" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6.8A2.8 2.8 0 016.8 4h10.4A2.8 2.8 0 0120 6.8v6.4a2.8 2.8 0 01-2.8 2.8H11l-3.8 3v-3H6.8A2.8 2.8 0 014 13.2V6.8z" />
-        </svg>
-      ),
+      icon: <LifeBuoy className="w-5 h-5" strokeWidth={1.8} />,
       title: "Technical Support & Improvements",
       description: "Ongoing support, UI improvements, troubleshooting and technical enhancements for existing systems and websites.",
       features: [
