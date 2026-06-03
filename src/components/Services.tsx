@@ -214,20 +214,22 @@ export default function Services() {
               {index === 2 && (
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Business automation workflow"
-                    className="w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80"
+                    alt="Business automation dashboards and workflow operations"
+                    className="w-full h-full object-cover brightness-95"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent"></div>
                 </div>
               )}
 
               {index === 3 && (
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Technical support and product improvements"
-                    className="w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80"
+                    alt="Technical troubleshooting and support workstation"
+                    className="w-full h-full object-cover brightness-90"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/25 via-transparent to-transparent"></div>
                 </div>
               )}
 
