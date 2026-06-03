@@ -4,8 +4,9 @@ export default function Capabilities() {
       title: "Mobile-first development",
       description: "Interfaces are designed to work properly on phones, tablets and desktops.",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <rect x="4" y="5" width="12" height="9" rx="1.8" />
+          <rect x="17" y="7" width="3" height="10" rx="0.8" />
         </svg>
       ),
       stats: "Mobile",
@@ -15,8 +16,8 @@ export default function Capabilities() {
       title: "Clear communication",
       description: "Practical updates, straightforward scope and clear handover points.",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v7a2.5 2.5 0 01-2.5 2.5H10l-3.5 3v-3H7.5A2.5 2.5 0 015 13.5v-7z" />
         </svg>
       ),
       stats: "Simple",
@@ -26,8 +27,9 @@ export default function Capabilities() {
       title: "Business-focused delivery",
       description: "Builds are shaped around real workflows, outcomes and operational needs.",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h9M4 12h9M4 17h9" />
+          <rect x="14" y="6" width="6" height="12" rx="1.5" />
         </svg>
       ),
       stats: "Practical",
@@ -37,8 +39,9 @@ export default function Capabilities() {
       title: "Support after launch",
       description: "Ongoing help is available for fixes, updates, deployment and improvements.",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7 12.5l3 3 7-7" />
+          <circle cx="12" cy="12" r="8" />
         </svg>
       ),
       stats: "Support",
@@ -48,8 +51,9 @@ export default function Capabilities() {
       title: "AI-assisted where useful",
       description: "AI tools can speed up delivery, but judgment and quality control remain human-led.",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <rect x="7" y="7" width="10" height="10" rx="2" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2M12 19v2M3 12h2M19 12h2" />
         </svg>
       ),
       stats: "Balanced",
@@ -73,11 +77,11 @@ export default function Capabilities() {
           {capabilities.map((capability, index) => (
             <div 
               key={index}
-              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              className="brand-card bg-gray-50 rounded-2xl p-6 border border-gray-200/70"
             >
               {/* Icon & Stats */}
               <div className="flex items-center justify-between mb-4">
-                <div className={`w-12 h-12 ${capability.color} rounded-lg flex items-center justify-center text-white`}>
+                <div className="brand-icon-shell">
                   {capability.icon}
                 </div>
                 <div className="text-right">

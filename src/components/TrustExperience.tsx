@@ -2,8 +2,9 @@ export default function TrustExperience() {
   const points = [
     {
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M18 13a1 1 0 01-1 1h-1v2a1 1 0 11-2 0v-2H6v2a1 1 0 11-2 0v-2H3a1 1 0 01-1-1V8a4 4 0 014-4h8a4 4 0 014 4v5zM8 7a1 1 0 100 2h4a1 1 0 100-2H8z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 9.5h15M8 6.5h8M6.5 17.5h11" />
+          <rect x="4" y="4" width="16" height="16" rx="2.5" />
         </svg>
       ),
       title: 'Technical Support Background',
@@ -11,8 +12,9 @@ export default function TrustExperience() {
     },
     {
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-10.707a1 1 0 00-1.414-1.414L9 9.172 7.707 7.879a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 7h12M6 12h8M6 17h5" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l2 2 3-3" />
         </svg>
       ),
       title: 'Systems & Deployment Experience',
@@ -20,8 +22,9 @@ export default function TrustExperience() {
     },
     {
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h8a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.5 7.5h7M3.5 12h7M3.5 16.5h7" />
+          <rect x="12" y="6" width="8.5" height="12" rx="1.8" />
         </svg>
       ),
       title: 'Business-Focused Development',
@@ -29,9 +32,9 @@ export default function TrustExperience() {
     },
     {
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M13 7H7v6h6V7z" />
-          <path fillRule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <rect x="7" y="7" width="10" height="10" rx="2" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M18.5 5.5l-1.4 1.4M6.9 17.1l-1.4 1.4" />
         </svg>
       ),
       title: 'AI-Assisted, Human-Led',
@@ -54,8 +57,8 @@ export default function TrustExperience() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {points.map((point, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center mb-4">
+            <div key={index} className="brand-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+              <div className="brand-icon-shell mb-4">
                 {point.icon}
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2 leading-snug">{point.title}</h3>

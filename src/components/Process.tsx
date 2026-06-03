@@ -5,8 +5,9 @@ export default function Process() {
       title: "Discovery",
       description: "Understanding goals, users and business requirements.",
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="5.5" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M16 16l4 4" />
         </svg>
       ),
       color: "bg-primary-600"
@@ -16,8 +17,8 @@ export default function Process() {
       title: "Planning",
       description: "Structuring the project, user flow and technical approach.",
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 7h14M5 12h10M5 17h7" />
         </svg>
       ),
       color: "bg-gray-600"
@@ -27,8 +28,8 @@ export default function Process() {
       title: "Build",
       description: "Developing the website, application or workflow system.",
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 7l-4 5 4 5M15 7l4 5-4 5" />
         </svg>
       ),
       color: "bg-gray-700"
@@ -38,8 +39,9 @@ export default function Process() {
       title: "Review",
       description: "Testing, refining and improving usability across devices.",
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7 12.5l3 3 7-7" />
+          <circle cx="12" cy="12" r="8" />
         </svg>
       ),
       color: "bg-gray-800"
@@ -49,8 +51,9 @@ export default function Process() {
       title: "Launch & Support",
       description: "Deployment, updates and ongoing improvements where needed.",
       icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 8h12M6 12h12M6 16h8" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 5.5h15v13h-15z" />
         </svg>
       ),
       color: "bg-gray-500"
@@ -88,7 +91,6 @@ export default function Process() {
                   {/* Step Number Circle */}
                   <div className={`relative inline-flex items-center justify-center w-12 h-12 ${step.color} text-white rounded-full font-bold text-lg mb-4 shadow-lg z-10`}>
                     {step.number}
-                    <div className="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
                   </div>
 
                   {/* Content */}
@@ -97,7 +99,7 @@ export default function Process() {
                     <p className="text-gray-600 text-sm leading-relaxed mb-4 min-h-[4rem] lg:min-h-[5rem]">{step.description}</p>
                     
                     {/* Icon */}
-                    <div className="inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg text-gray-600">
+                    <div className="brand-icon-shell">
                       {step.icon}
                     </div>
                   </div>

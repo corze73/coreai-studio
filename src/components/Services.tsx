@@ -8,8 +8,8 @@ export default function Services() {
   const services = [
     {
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h10" />
         </svg>
       ),
       title: "Website Development",
@@ -49,8 +49,9 @@ export default function Services() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 6.75A2.75 2.75 0 015.75 4h12.5A2.75 2.75 0 0121 6.75v7.5A2.75 2.75 0 0118.25 17H5.75A2.75 2.75 0 013 14.25v-7.5z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8 10.5h8M8 14h5" />
         </svg>
       ),
       title: "Web & Mobile App Development",
@@ -90,8 +91,9 @@ export default function Services() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h7m-7 5h7m-7 5h7" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M14 5h6v14h-6z" />
         </svg>
       ),
       title: "Business Automation",
@@ -131,8 +133,9 @@ export default function Services() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123A6.948 6.948 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zm-9-1a1 1 0 012 0v3a1 1 0 11-2 0V9zm1-3a1.25 1.25 0 100 2.5A1.25 1.25 0 0010 6z" clipRule="evenodd" />
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.5h9m-9 4h6" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6.8A2.8 2.8 0 016.8 4h10.4A2.8 2.8 0 0120 6.8v6.4a2.8 2.8 0 01-2.8 2.8H11l-3.8 3v-3H6.8A2.8 2.8 0 014 13.2V6.8z" />
         </svg>
       ),
       title: "Technical Support & Improvements",
@@ -189,7 +192,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full"
+              className="brand-card bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full border border-gray-200/80"
             >
               {index === 0 && (
                 <div className="relative h-48 overflow-hidden">
@@ -234,11 +237,11 @@ export default function Services() {
               )}
 
               <div className={`bg-gradient-to-r ${service.gradient} p-6 text-white`}>
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <div className="brand-icon-shell brand-icon-shell-dark mb-4">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-white/90">{service.description}</p>
+                <p className="text-white/90 leading-relaxed">{service.description}</p>
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
@@ -253,7 +256,7 @@ export default function Services() {
 
                 <button 
                   onClick={() => setExpandedService(expandedService === index ? null : index)}
-                  className="w-full mt-6 bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+                  className="w-full mt-6 bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200 ease-out"
                 >
                   {expandedService === index ? 'Show Less' : 'Learn More'}
                 </button>
