@@ -57,7 +57,7 @@ export default function Contact() {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
             <p className="text-lg text-gray-600 mb-6">
-              Your message has been received. Our AI team will review your requirements and get back to you within 24 hours.
+              Your message has been received. I&apos;ll review your requirements and get back to you within 24 hours.
             </p>
             <button 
               onClick={() => setIsSubmitted(false)}
@@ -78,12 +78,11 @@ export default function Contact() {
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Ready to Transform Your Business with
-              <span className="text-primary-600"> AI?</span>
+              Ready to Start Your
+              <span className="text-primary-600"> Project?</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Experience our revolutionary AI consultation system - no meetings required! 
-              Get instant, intelligent recommendations for your business in minutes, not days.
+              Tell me what you need and I&apos;ll come back with the most practical next step.
             </p>
 
             {/* Contact Methods */}
@@ -120,8 +119,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Consultation</h3>
-                  <p className="text-gray-600">AI-powered consultation system</p>
+                  <h3 className="font-semibold text-gray-900">Approach</h3>
+                  <p className="text-gray-600">Direct, practical and business-focused</p>
                 </div>
               </div>
             </div>
@@ -132,19 +131,19 @@ export default function Contact() {
               <ul className="space-y-2">
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Intelligent AI consultation (no meetings required)
+                  Clear next steps for your project
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Custom AI strategy recommendations
+                  Advice on the most suitable build approach
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Instant project recommendations and pricing
+                  Honest pricing based on scope
                 </li>
                 <li className="flex items-center text-gray-700">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Smart ROI projections for your business
+                  Support for websites, apps and automation
                 </li>
               </ul>
               
@@ -157,9 +156,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-primary-800 mb-1">Faster Option Available!</h4>
+                    <h4 className="font-semibold text-primary-800 mb-1">Need a clearer starting point?</h4>
                     <p className="text-primary-700 text-sm">
-                      Skip the form and try our AI consultation system. Get instant recommendations for your project in minutes.
+                      Send the form and I&apos;ll reply with a practical recommendation for the next step.
                     </p>
                   </div>
                 </div>
@@ -171,10 +170,10 @@ export default function Contact() {
           <div className="bg-gray-50 rounded-2xl p-8">
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Traditional Contact Form
+                Project Enquiry Form
               </h3>
               <p className="text-gray-600 text-sm">
-                Prefer the traditional approach? Fill out this form and we'll get back to you within 24 hours.
+                Tell me what you need and I&apos;ll review it within 24 hours.
               </p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -249,11 +248,11 @@ export default function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                   >
-                    <option value="">Select a package</option>
-                    <option value="content">Starter Blog Pack (£75)</option>
-                    <option value="design">Logo & Social Kit (£95)</option>
-                    <option value="automation">Process Automation Pack (£125)</option>
-                    <option value="custom">Custom Solution</option>
+                      <option value="">Select a project type</option>
+                      <option value="website">Website Development</option>
+                      <option value="app">Web / Mobile App Development</option>
+                      <option value="automation">Business Automation</option>
+                      <option value="support">Technical Support & Improvements</option>
                   </select>
                 </div>
                 <div>
@@ -267,11 +266,10 @@ export default function Contact() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                   >
                     <option value="">Select budget range</option>
-                    <option value="75">£75 (Starter Blog Pack)</option>
-                    <option value="95">£95 (Logo & Social Kit)</option>
-                    <option value="125">£125 (Process Automation Pack)</option>
-                    <option value="150-300">£150 - £300 (Multiple Packages)</option>
-                    <option value="300+">£300+ (Custom Project)</option>
+                    <option value="starter">Starter project</option>
+                    <option value="mid">Mid-sized build</option>
+                    <option value="larger">Larger project</option>
+                    <option value="support">Ongoing support</option>
                   </select>
                 </div>
               </div>
@@ -287,7 +285,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Tell us about your business goals and how our AI packages can help. For faster service, try our AI consultation system above!"
+                  placeholder="Tell me about your business, the project you need, and any features or deadlines you already have in mind."
                 />
               </div>
 
@@ -305,13 +303,12 @@ export default function Contact() {
                     Sending Message...
                   </span>
                 ) : (
-                  'Send Message & Schedule Follow-up'
+                  'Send Project Enquiry'
                 )}
               </button>
 
               <p className="text-sm text-gray-600 text-center">
-                <strong>Tip:</strong> For instant recommendations, try our AI consultation system above! 
-                Traditional form responses within 24 hours.
+                <strong>Tip:</strong> Include examples or references if you have them. I&apos;ll respond with the most practical next step.
               </p>
             </form>
           </div>

@@ -6,15 +6,15 @@ import GoogleAnalytics from '../components/GoogleAnalytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CoreAi-Studio | AI-Powered Content, Design & Automation',
-  description: 'Professional AI-powered content creation, design, and automation services that move businesses faster. Transform your workflow with cutting-edge AI solutions.',
-  keywords: 'AI content, AI design, automation, artificial intelligence, business solutions, content creation',
+  title: 'CoreAI Studio | Freelance Web, Mobile App & Automation Developer',
+  description: 'UK-based freelance developer building practical websites, mobile-friendly web apps, dashboards, booking systems and business automation solutions.',
+  keywords: 'freelance web developer, mobile app developer, automation, dashboards, booking systems, UK developer, websites, web apps',
   authors: [{ name: 'CoreAi-Studio' }],
   creator: 'CoreAi-Studio',
   publisher: 'CoreAi-Studio',
   openGraph: {
-    title: 'CoreAi-Studio | AI-Powered Content, Design & Automation',
-    description: 'Professional AI-powered content creation, design, and automation services that move businesses faster.',
+    title: 'CoreAI Studio | Freelance Web, Mobile App & Automation Developer',
+    description: 'UK-based freelance developer building practical websites, mobile-friendly web apps, dashboards and automation systems.',
     url: 'https://coreai-studio.com',
     siteName: 'CoreAi-Studio',
     locale: 'en_US',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CoreAi-Studio | AI-Powered Content, Design & Automation',
-    description: 'Professional AI-powered content creation, design, and automation services that move businesses faster.',
+    title: 'CoreAI Studio | Freelance Web, Mobile App & Automation Developer',
+    description: 'UK-based freelance developer building practical websites, mobile-friendly web apps, dashboards and automation systems.',
   },
   robots: {
     index: true,

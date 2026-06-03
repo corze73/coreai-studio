@@ -37,9 +37,9 @@ export default function Navigation() {
               <Logo size={40} className="transition-transform duration-200 hover:scale-110" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-gray-900">
-                  CoreAi<span className="text-primary-600">-Studio</span>
+                  CoreAI <span className="text-primary-600">Studio</span>
                 </span>
-                <span className="text-xs text-gray-600 -mt-1">AI-Powered Solutions</span>
+                <span className="text-xs text-gray-600 -mt-1">Freelance Developer</span>
               </div>
             </Link>
           </div>
@@ -65,7 +65,7 @@ export default function Navigation() {
               href="#contact"
               className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200"
             >
-              Get Started
+              Discuss Your Project
             </Link>
           </div>
 
@@ -120,7 +120,7 @@ export default function Navigation() {
                 className="bg-primary-600 hover:bg-primary-700 text-white block px-3 py-2 text-base font-medium rounded-md mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Started
+                Discuss Your Project
               </Link>
             </div>
           </div>

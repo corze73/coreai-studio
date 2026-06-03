@@ -2,8 +2,8 @@ export default function Process() {
   const steps = [
     {
       number: "01",
-      title: "Quick AI Consultation",
-      description: "Answer 7 smart questions and get instant, personalized recommendations for your business needs.",
+      title: "Discovery",
+      description: "We discuss your goals, current setup and the outcome you want to achieve.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
@@ -13,8 +13,8 @@ export default function Process() {
     },
     {
       number: "02",
-      title: "Choose Your Package",
-      description: "Select from our affordable starter packages: £75 Blog Pack, £95 Design Kit, or £125 Mini Automation.",
+      title: "Planning",
+      description: "I map the structure, features, content and technical approach before any build starts.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
@@ -24,8 +24,8 @@ export default function Process() {
     },
     {
       number: "03",
-      title: "Fast AI Production",
-      description: "Our AI systems immediately start creating your content, designs, or automation workflows with precision.",
+      title: "Build",
+      description: "The website, app or workflow is developed with responsiveness, performance and maintainability in mind.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
@@ -35,8 +35,8 @@ export default function Process() {
     },
     {
       number: "04",
-      title: "Quality Review",
-      description: "Every AI output is reviewed and refined to ensure it meets professional standards before delivery.",
+      title: "Review",
+      description: "We check usability, content, layout and functionality before anything goes live.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -46,8 +46,8 @@ export default function Process() {
     },
     {
       number: "05",
-      title: "Rapid Delivery",
-      description: "Receive your completed package within 24-48 hours - no lengthy project timelines or meetings required.",
+      title: "Launch & Support",
+      description: "The project is deployed and supported after launch so you are not left on your own.",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
@@ -63,12 +63,11 @@ export default function Process() {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">
-            Our Streamlined
-            <span className="text-primary-600"> Package Process</span>
+            A Clear Project
+            <span className="text-primary-600"> Process</span>
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
-            From AI consultation to delivery in 48 hours. No lengthy meetings, 
-            no complex strategies - just fast, affordable AI solutions for your business.
+            A straightforward process built for honest communication, sensible planning and dependable delivery.
           </p>
         </div>
 
@@ -112,16 +111,16 @@ export default function Process() {
         <div className="mt-16 lg:mt-20 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-6 lg:p-8 text-white mx-4 lg:mx-0">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 text-center">
             <div>
-              <div className="text-2xl lg:text-3xl font-bold mb-2">48hr</div>
-              <div className="text-primary-100 text-sm lg:text-base">Package Delivery</div>
+              <div className="text-2xl lg:text-3xl font-bold mb-2">5 Steps</div>
+              <div className="text-primary-100 text-sm lg:text-base">From discovery to support</div>
             </div>
             <div>
-              <div className="text-2xl lg:text-3xl font-bold mb-2">£75+</div>
-              <div className="text-primary-100 text-sm lg:text-base">Starting Packages</div>
+              <div className="text-2xl lg:text-3xl font-bold mb-2">Mobile-first</div>
+              <div className="text-primary-100 text-sm lg:text-base">Designed for modern users</div>
             </div>
             <div>
-              <div className="text-2xl lg:text-3xl font-bold mb-2">100%</div>
-              <div className="text-primary-100 text-sm lg:text-base">AI-Powered</div>
+              <div className="text-2xl lg:text-3xl font-bold mb-2">Support</div>
+              <div className="text-primary-100 text-sm lg:text-base">Launch help and follow-up</div>
             </div>
           </div>
         </div>

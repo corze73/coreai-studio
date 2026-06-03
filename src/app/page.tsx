@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import About from '@/components/About'
+import TrustExperience from '@/components/TrustExperience'
 import Process from '@/components/Process'
 import Portfolio from '@/components/Portfolio'
 import Capabilities from '@/components/Testimonials'
@@ -15,6 +16,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <TrustExperience />
       <Services />
       <Process />
       <Portfolio />

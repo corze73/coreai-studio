@@ -6,28 +6,19 @@ export default function Footer() {
 
   const footerLinks = {
     services: [
-      { name: 'AI Content Creation', href: '#services' },
-      { name: 'AI Design Solutions', href: '#services' },
+      { name: 'Website Development', href: '#services' },
+      { name: 'Web & Mobile Apps', href: '#services' },
       { name: 'Business Automation', href: '#services' },
-      { name: 'AI Consulting', href: '#contact' }
+      { name: 'Technical Support', href: '#contact' }
     ],
-    company: [
-      { name: 'About Us', href: '#about' },
-      { name: 'Our Process', href: '#process' },
-      { name: 'Portfolio', href: '#portfolio' },
-      { name: 'Contact', href: '#contact' }
+    projects: [
+      { name: 'FACT', href: '#portfolio' },
+      { name: 'AFMG', href: '#portfolio' },
+      { name: 'Project Analytics Dashboard', href: '#portfolio' }
     ],
-    resources: [
-      { name: 'Case Studies', href: '#portfolio' },
-      { name: 'AI Blog', href: '#' },
-      { name: 'Free Tools', href: '#' },
-      { name: 'Documentation', href: '#' }
-    ],
-    legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-      { name: 'GDPR Compliance', href: '#' }
+    contact: [
+      { name: 'Freelancer Profile', href: '' },
+      { name: 'LinkedIn', href: '' }
     ]
   }
 
@@ -36,23 +27,20 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid lg:grid-cols-6 gap-8">
+          <div className="grid lg:grid-cols-5 gap-8">
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <div className="mb-6">
                 <Link href="#home" className="flex items-center space-x-3">
                   <Logo size={36} className="transition-transform duration-200 hover:scale-110" />
                   <div className="flex flex-col">
-                    <span className="text-2xl font-bold">
-                      CoreAi<span className="text-primary-400">-Studio</span>
-                    </span>
-                    <span className="text-sm text-gray-400 -mt-1">AI-Powered Solutions</span>
+                    <span className="text-2xl font-bold">CoreAI Studio</span>
+                    <span className="text-sm text-gray-400 -mt-1">Freelance Developer</span>
                   </div>
                 </Link>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Transform your business with AI-powered content, design, and automation solutions. 
-                Experience the future of productivity with cutting-edge artificial intelligence.
+                CoreAI Studio helps businesses build practical websites, web apps, dashboards and automation systems.
               </p>
               
               {/* Contact Info */}
@@ -68,27 +56,8 @@ export default function Footer() {
                   <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                   </svg>
-                  24/7 AI Processing
+                  UK-based freelance developer
                 </div>
-              </div>
-
-              {/* Social Links */}
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                  </svg>
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.754-1.378l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -106,11 +75,11 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Company */}
+            {/* Projects */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Company</h3>
+              <h3 className="text-lg font-semibold mb-6">Projects</h3>
               <ul className="space-y-3">
-                {footerLinks.company.map((link, index) => (
+                {footerLinks.projects.map((link, index) => (
                   <li key={index}>
                     <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
                       {link.name}
@@ -120,29 +89,25 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Resources */}
+            {/* Contact */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Resources</h3>
+              <h3 className="text-lg font-semibold mb-6">Contact</h3>
               <ul className="space-y-3">
-                {footerLinks.resources.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Legal */}
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Legal</h3>
-              <ul className="space-y-3">
-                {footerLinks.legal.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                      {link.name}
-                    </Link>
+                <li>
+                  <a href="mailto:hello@coreai-studio.com" className="text-gray-400 hover:text-white transition-colors">
+                    hello@coreai-studio.com
+                  </a>
+                </li>
+                <li className="text-gray-400">UK-based freelance developer</li>
+                {footerLinks.contact.map((link, index) => (
+                  <li key={index} className="text-gray-400">
+                    {link.href ? (
+                      <a href={link.href} className="hover:text-white transition-colors">
+                        {link.name}
+                      </a>
+                    ) : (
+                      <span>{link.name}</span>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -154,7 +119,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 mb-4 md:mb-0">
-              © {currentYear} CoreAi-Studio. All rights reserved. | Powered by AI
+              © {currentYear} CoreAI Studio. All rights reserved.
             </div>
             
             {/* Trust Badges */}
@@ -163,19 +128,19 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-2 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                GDPR Compliant
+                Freelance-led
               </div>
               <div className="flex items-center">
                 <svg className="w-4 h-4 mr-2 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                 </svg>
-                SSL Secured
+                Business-focused
               </div>
               <div className="flex items-center">
                 <svg className="w-4 h-4 mr-2 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                 </svg>
-                AI Powered
+                Practical delivery
               </div>
             </div>
           </div>

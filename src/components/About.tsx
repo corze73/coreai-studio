@@ -8,19 +8,16 @@ export default function About() {
           {/* Content */}
           <div className="animate-slide-up">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Leading the AI Revolution in
-              <span className="text-primary-600"> Business Solutions</span>
+              Practical Development
+              <span className="text-primary-600"> for Real Businesses</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At CoreAi-Studio, we harness the power of artificial intelligence to transform how businesses create content, 
-              design experiences, and automate processes. Our AI-first approach delivers exceptional results at unprecedented speed.
+              CoreAI Studio helps businesses build practical websites, web apps, dashboards, booking systems and automation workflows that are designed for real day-to-day operations.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Every solution we deliver is powered by cutting-edge AI technology, ensuring consistency, efficiency, 
-              and innovation that traditional methods simply cannot match.
+              This is a freelance-led service with experience in technical support, systems deployment, engineering discipline and business problem-solving. Every build is approached as a practical technical solution, not an agency-style template deliverable.
             </p>
 
-            {/* Key Points */}
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -31,8 +28,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">100% AI-Powered Workflow</h3>
-                  <p className="text-gray-600">Every project leverages advanced AI technology for optimal results</p>
+                  <h3 className="text-lg font-semibold text-gray-900">Real technical problem-solving</h3>
+                  <p className="text-gray-600">Practical delivery for business systems, websites and automation workflows</p>
                 </div>
               </div>
 
@@ -45,8 +42,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Lightning-Fast Delivery</h3>
-                  <p className="text-gray-600">AI automation enables rapid turnaround without compromising quality</p>
+                  <h3 className="text-lg font-semibold text-gray-900">Clear communication</h3>
+                  <p className="text-gray-600">Direct collaboration with a single developer who understands the full project</p>
                 </div>
               </div>
 
@@ -59,8 +56,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Professional Excellence</h3>
-                  <p className="text-gray-600">Consistent, high-quality output that exceeds industry standards</p>
+                  <h3 className="text-lg font-semibold text-gray-900">Modern tools, grounded delivery</h3>
+                  <p className="text-gray-600">AI-assisted workflows where useful, with human judgment and accountability</p>
                 </div>
               </div>
             </div>
@@ -75,9 +72,9 @@ export default function About() {
                     <div className="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                       <Logo size={32} />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">AI-First Approach</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Freelance Technical Partner</h3>
                     <p className="text-gray-600 text-sm">
-                      We don&apos;t just use AI as a tool – it&apos;s the foundation of everything we create
+                      A flexible, business-focused service for clients who need practical digital solutions and dependable support
                     </p>
                   </div>
                 </div>

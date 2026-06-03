@@ -7,36 +7,36 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How does AI-powered content creation work?",
-      answer: "Our AI systems analyze your brand voice, target audience, and objectives to generate high-quality content that aligns perfectly with your goals. We use advanced language models combined with industry-specific training to ensure accuracy and relevance."
+      question: "What types of projects do you take on?",
+      answer: "I work on business websites, web apps, dashboards, booking systems, automations and technical improvements for existing products."
     },
     {
-      question: "What makes CoreAi-Studio different from traditional agencies?",
-      answer: "We leverage cutting-edge AI technology to deliver results 10x faster than traditional methods. Our entire workflow is AI-powered, from initial concept to final delivery, ensuring consistency, speed, and cost-effectiveness that traditional agencies cannot match."
+      question: "What makes CoreAI Studio different from an agency?",
+      answer: "You work directly with a freelance developer who handles the project end to end with a practical, business-focused approach."
     },
     {
-      question: "How quickly can you deliver projects?",
-      answer: "Most projects are completed within 24-72 hours, depending on scope. Simple content creation can be delivered same-day, while complex automation projects typically take 3-5 business days. Our AI-powered workflow eliminates traditional bottlenecks."
+      question: "How do you approach pricing?",
+      answer: "Projects are quoted after a short consultation so the scope, features and support requirements can be priced properly."
     },
     {
-      question: "Do you offer revisions and customization?",
-      answer: "Absolutely! While our AI generates high-quality initial outputs, we offer unlimited revisions within the project scope. Our AI can quickly adapt to feedback and generate multiple variations to ensure your complete satisfaction."
+      question: "Do you work on mobile-friendly experiences?",
+      answer: "Yes. Mobile responsiveness is standard on all website, app and dashboard work."
     },
     {
-      question: "What industries do you work with?",
-      answer: "Our AI solutions work across all industries including technology, healthcare, finance, e-commerce, manufacturing, and professional services. We customize our AI models and approaches based on industry-specific requirements and regulations."
+      question: "Can you improve an existing website or system?",
+      answer: "Yes. I can fix issues, improve UI, tidy the structure, help with deployment and add features to existing builds."
     },
     {
-      question: "How do you ensure quality and accuracy?",
-      answer: "Every AI output goes through our multi-layer quality assurance process including automated checks, human review, and client feedback integration. We maintain a 99%+ accuracy rate and provide detailed quality reports for all deliverables."
+      question: "Do you use AI in your work?",
+      answer: "Yes, where it adds value. I use AI-assisted tools to speed up research, planning and development, but the project is still designed and checked by a developer."
     },
     {
-      question: "Can you integrate with our existing systems?",
-      answer: "Yes! Our AI solutions are designed to integrate seamlessly with popular platforms including CRM systems, content management platforms, marketing automation tools, and custom APIs. We provide full integration support."
+      question: "What support do you offer after launch?",
+      answer: "I can help with updates, fixes, minor improvements, hosting/deployment support and ongoing technical maintenance."
     },
     {
-      question: "What are your pricing models?",
-      answer: "We offer flexible pricing including project-based rates, monthly retainers, and custom enterprise packages. All pricing is transparent with no hidden fees. Contact us for a personalized quote based on your specific needs."
+      question: "What information should I send to get started?",
+      answer: "A short summary of the project, the main goal, any examples you like, and the platform or tools you already use is enough to start."
     }
   ]
 
@@ -54,7 +54,7 @@ export default function FAQ() {
             <span className="text-primary-600"> Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Get answers to common questions about our AI-powered services and how we can help transform your business.
+            Answers to the most common questions about working with CoreAI Studio.
           </p>
         </div>
 
@@ -105,15 +105,15 @@ export default function FAQ() {
               Still Have Questions?
             </h3>
             <p className="text-lg text-gray-600 mb-6">
-              Our AI experts are here to help you understand how our solutions can benefit your business.
+              Send a message if you want to discuss your project before starting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Schedule a Call
-              </button>
-              <button className="border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition-colors">
+              <a href="#contact" className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
+                Discuss Your Project
+              </a>
+              <a href="mailto:hello@coreai-studio.com" className="border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
                 Email Us
-              </button>
+              </a>
             </div>
           </div>
         </div>
