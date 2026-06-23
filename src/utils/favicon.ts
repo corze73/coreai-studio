@@ -1,10 +1,10 @@
 export function generateFavicon() {
   return `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="16" cy="16" r="16" fill="#3B82F6"/>
-    <rect x="8" y="10" width="12" height="2" rx="1" fill="white"/>
-    <rect x="8" y="14" width="10" height="2" rx="1" fill="white"/>
-    <rect x="8" y="18" width="8" height="2" rx="1" fill="white"/>
-    <circle cx="22" cy="12" r="3" fill="#10B981"/>
+    <rect x="1" y="1" width="30" height="30" rx="8" fill="#0F172A"/>
+    <rect x="1" y="1" width="30" height="30" rx="8" stroke="#1D4ED8" stroke-opacity="0.55"/>
+    <path d="M20.5 10.2H14.6C12.11 10.2 10.1 12.22 10.1 14.7V17.3C10.1 19.79 12.11 21.8 14.6 21.8H20.5" stroke="#93C5FD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16.4 12.4L19.6 15.1L16.4 17.8" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.6 8.8H11.2" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
   </svg>`;
 }
 
