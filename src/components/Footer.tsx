@@ -17,6 +17,11 @@ export default function Footer() {
       { name: 'AFMG', href: '#portfolio' },
       { name: 'Project Analytics Dashboard', href: '#portfolio' }
     ],
+    legal: [
+      { name: 'Terms & Conditions', href: '/terms-and-conditions' },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
+      { name: 'Cookie Policy', href: '/cookie-policy' }
+    ],
     contact: [
       { name: 'Freelancer Profile' },
       { name: 'LinkedIn' }
@@ -28,7 +33,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-12 sm:py-16">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
             {/* Brand Section */}
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="mb-5">
@@ -64,6 +69,20 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-5">Projects</h3>
               <ul className="space-y-3">
                 {footerLinks.projects.map((link, index) => (
+                  <li key={index}>
+                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-lg font-semibold mb-5">Legal</h3>
+              <ul className="space-y-3">
+                {footerLinks.legal.map((link, index) => (
                   <li key={index}>
                     <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
                       {link.name}
