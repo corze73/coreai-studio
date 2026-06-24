@@ -309,7 +309,7 @@ export default function Services() {
                     <div className="pt-4 border-t">
                       <div className="flex flex-col sm:flex-row gap-3">
                         <a
-                          href="#contact"
+                          href="/#contact"
                           className="brand-btn brand-btn-primary flex-1 bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg font-semibold text-center"
                         >
                           Discuss Your Project
@@ -338,10 +338,10 @@ export default function Services() {
               Share what you need and I&apos;ll suggest the most practical approach for your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold">
+              <a href="/#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold">
                 Discuss Your Project
               </a>
-              <a href="#portfolio" className="brand-btn brand-btn-secondary border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold">
+              <a href="/#portfolio" className="brand-btn brand-btn-secondary border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-lg font-semibold">
                 View Work
               </a>
             </div>

@@ -7,15 +7,15 @@ export default function Footer() {
 
   const footerLinks = {
     services: [
-      { name: 'Website Development', href: '#services' },
-      { name: 'Web & Mobile Apps', href: '#services' },
-      { name: 'Business Automation', href: '#services' },
-      { name: 'Technical Support', href: '#contact' }
+      { name: 'Website Development', href: '/#services' },
+      { name: 'Web & Mobile Apps', href: '/#services' },
+      { name: 'Business Automation', href: '/#services' },
+      { name: 'Technical Support', href: '/#contact' }
     ],
     projects: [
-      { name: 'FACT', href: '#portfolio' },
-      { name: 'AFMG', href: '#portfolio' },
-      { name: 'Project Analytics Dashboard', href: '#portfolio' }
+      { name: 'FACT', href: '/#portfolio' },
+      { name: 'AFMG', href: '/#portfolio' },
+      { name: 'Project Analytics Dashboard', href: '/#portfolio' }
     ],
     legal: [
       { name: 'Terms & Conditions', href: '/terms-and-conditions' },
@@ -37,7 +37,7 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="mb-5">
-                <Link href="#home" className="flex items-center space-x-3">
+                <Link href="/" className="flex items-center space-x-3">
                   <Logo size={36} className="transition-transform duration-200 hover:scale-110" />
                   <div className="flex flex-col">
                     <span className="text-xl font-bold">CoreAI Studio</span>

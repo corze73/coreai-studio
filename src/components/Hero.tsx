@@ -42,13 +42,13 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center px-4 sm:px-0 mt-2">
             <Link
-              href="#contact"
+              href="/#contact"
               className="brand-btn brand-btn-primary w-full sm:w-auto whitespace-nowrap bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-base sm:text-lg font-semibold text-center"
             >
               Discuss Your Project
             </Link>
             <Link
-              href="#portfolio"
+              href="/#portfolio"
               className="brand-btn brand-btn-secondary w-full sm:w-auto whitespace-nowrap border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 px-8 py-4 rounded-full text-base sm:text-lg font-semibold text-center"
             >
               View Work
@@ -56,7 +56,7 @@ export default function Hero() {
           </div>
 
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <Link href="#about" className="text-gray-400 hover:text-primary-600 transition-colors">
+            <Link href="/#about" className="text-gray-400 hover:text-primary-600 transition-colors">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>

@@ -101,13 +101,13 @@ export default function Capabilities() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="brand-btn brand-btn-secondary whitespace-nowrap bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
             >
               Discuss Your Project
             </a>
             <a
-              href="#services"
+              href="/#services"
               className="brand-btn whitespace-nowrap border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center"
             >
               View Services

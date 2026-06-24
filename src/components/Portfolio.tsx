@@ -156,7 +156,7 @@ export default function Portfolio() {
             <p className="text-lg text-gray-600 mb-6">
               If you need a website, app, dashboard or automation build, I can help scope the right approach.
             </p>
-            <a href="#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold inline-block">
+            <a href="/#contact" className="brand-btn brand-btn-primary bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold inline-block">
               Discuss Your Project
             </a>
           </div>
